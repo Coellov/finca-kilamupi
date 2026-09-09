@@ -21,7 +21,7 @@ export default function Home() {
         </div>
                 <div className="relative z-10 contenedor grid gap-10 py-20 md:grid-cols-[1.1fr_0.9fr] md:py-28">
           <div className="flex flex-col justify-center">
-            <p className="eyebrow text-upano">Valle del Upano · Morona Santiago</p>
+                        <p className="eyebrow text-crema">Valle del Upano · Morona Santiago</p>
             <h1 className="mt-4 font-display text-4xl font-bold leading-[1.05] sm:text-5xl md:text-6xl">
               Donde el bosque primario se cultiva con las manos
             </h1>
@@ -44,10 +44,10 @@ export default function Home() {
           </div>
 
           <div className="relative flex items-center justify-center">
-            <div className="aspect-square w-full max-w-sm rounded-3xl border border-crema/15 bg-plantacion/20 p-8">
-              <div className="flex h-full flex-col justify-between">
+                        <div className="w-full max-w-sm rounded-3xl border border-crema/15 bg-plantacion/20 p-8">
+             <div className="flex h-full flex-col justify-center gap-6">
                 <p className="font-display text-2xl font-semibold">
-                  1.450 msnm
+                  1.100 msnm
                 </p>
                 <p className="font-body text-sm text-crema/70">
                   Altura de cultivo bajo sombra de bosque primario, junto a los
