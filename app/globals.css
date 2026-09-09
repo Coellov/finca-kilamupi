@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@layer components {
+  .contenedor {
+    @apply mx-auto w-full max-w-contenido px-5 sm:px-8;
+  }
+
+  .titulo {
+    @apply font-display font-semibold leading-tight text-selva;
+  }
+
+  .eyebrow {
+    @apply font-body text-xs font-semibold uppercase tracking-[0.18em] text-plantacion;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center rounded-full px-6 py-3 font-body text-sm font-semibold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-upano;
+  }
+
+  .btn-primary {
+    @apply btn bg-upano text-crema hover:bg-[#a94b2e];
+  }
+
+  .btn-ghost {
+    @apply btn border border-selva/30 text-selva hover:bg-selva hover:text-crema;
+  }
+
+  .card {
+    @apply rounded-2xl border border-arena bg-white/60 backdrop-blur-sm;
+  }
+}
